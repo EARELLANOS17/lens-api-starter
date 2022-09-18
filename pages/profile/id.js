@@ -9,6 +9,8 @@ import Head from "next/head";
 
 const CONTRACT_ADDRESS = "0x60Ae865ee4C725cd04353b5AAb364553f56ceF82";
 
+
+
 export default function Profile() {
   const [profile, setProfile] = useState();
   const [pubs, setPubs] = useState([]);
@@ -60,6 +62,7 @@ export default function Profile() {
       console.log("Failed to follow user due to", err);
     }
   }
+
 
   return (
     <Layout>
